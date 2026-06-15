@@ -1,6 +1,6 @@
 {
   "name": "@agentaily/web-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "跨产品共享的浏览器运行时库 —— 主题 + 国际化 + 跨子域 cookie 持久化(非视觉运行时)。",
   "type": "module",
   "license": "MIT",
