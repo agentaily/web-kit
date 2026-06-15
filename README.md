@@ -1,5 +1,7 @@
 # @agentaily/web-kit
 
+[![npm](https://img.shields.io/npm/v/@agentaily/web-kit)](https://www.npmjs.com/package/@agentaily/web-kit)
+
 跨产品共享的**浏览器运行时**库 —— 把「主题切换 + 国际化 + 持久化」这套横切关注点统一到一处,所有 agentaily 产品(form-design、official-website、各产品宣传站…)消费它,别各自手搓。
 
 > **定位**:`@agentaily/design-system` 是**视觉/镜像组件**;`@agentaily/web-kit` 是**非视觉的 app 运行时**(状态/持久化/Provider)。两者都被产品消费,职责不重叠。React + TypeScript,changesets 自动发 npm(同 design-system 流程)。
