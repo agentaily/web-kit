@@ -43,6 +43,11 @@ jobs:
           node-version: 22
           registry-url: https://registry.npmjs.org
       - run: npm ci
+      # Build dist BEFORE publishing. `changeset publish` ships whatever's on
+      # disk; with files:["dist"] but no dist built, the tarball is empty
+      # (0.1.1 shipped this way — package.json+README only, every import broke).
+      # `prepack` in package.json also guards local/manual publishes.
+      - run: npm run build
       - uses: changesets/action@v1
         id: changesets
         with:
