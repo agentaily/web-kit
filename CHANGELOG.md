@@ -1,5 +1,11 @@
 # @agentaily/web-kit
 
+## 0.1.1
+
+### Patch Changes
+
+- [#2](https://github.com/agentaily/web-kit/pull/2) [`6381c65`](https://github.com/agentaily/web-kit/commit/6381c65cf4b260a2a0d6a42455f0e815ee48c544) Thanks [@yarnovo](https://github.com/yarnovo)! - docs: README 顶部加 npm 版本徽章(已发布包标准做法,消费者一眼看到当前 npm 版本)
+
 ## 0.1.0
 
 ### Minor Changes
