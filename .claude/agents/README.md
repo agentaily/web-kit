@@ -4,13 +4,13 @@ Project subagents for **@agentaily/web-kit**. Each has a single responsibility, 
 
 ## Roster
 
-| Agent | Owns | Doesn't touch |
-| --- | --- | --- |
-| `spec-architect` | SPEC.md, features/, src/*.ts (strict TS,导出类型/接口) contracts | implementation, tests |
-| `implementer` | src/*.ts (strict TS,导出类型/接口) bodies, vitest (tests/unit) (inner loop) | features, integration/e2e, CI |
-| `outer-tester` | vitest + @testing-library/react, jsdom (tests/integration) | product code |
-| `reviewer` | independent adversarial review (read-only) | editing code |
-| `release-eng` | GitHub Actions + Changesets (发 npm) + lefthook + Prettier | product code, features, tests |
+| Agent            | Owns                                                                         | Doesn't touch                 |
+| ---------------- | ---------------------------------------------------------------------------- | ----------------------------- |
+| `spec-architect` | SPEC.md, features/, src/\*.ts (strict TS,导出类型/接口) contracts            | implementation, tests         |
+| `implementer`    | src/\*.ts (strict TS,导出类型/接口) bodies, vitest (tests/unit) (inner loop) | features, integration/e2e, CI |
+| `outer-tester`   | vitest + @testing-library/react, jsdom (tests/integration)                   | product code                  |
+| `reviewer`       | independent adversarial review (read-only)                                   | editing code                  |
+| `release-eng`    | GitHub Actions + Changesets (发 npm) + lefthook + Prettier                   | product code, features, tests |
 
 ## Flow (double-loop TDD + PR-driven)
 
